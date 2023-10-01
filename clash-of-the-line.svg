@@ -1,0 +1,54 @@
+<svg width="721" height="481" viewBox="-0.5 -0.5 721 481" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    path {
+      fill: none;
+      fill-opacity: 0.8;
+      stroke-width: 1;
+      stroke: #5d4c2e;
+    }
+    #dz-a { fill: #d4d1cc; }
+    #dz-b { fill: #d4d1cc; }
+    #centerline {
+      stroke-miterlimit: 4;
+      stroke-dasharray: 1,2;
+    }
+    #legend {
+    	stroke: black;
+    	fill: black;
+    	marker-start: url(#start-arrow);
+    	marker-end: url(#end-arrow)
+    }
+    marker {
+    	overflow:visible;
+    }
+    marker path {
+	stroke: black;
+	stroke-opacity: 1;
+	fill: black;
+	fill-opacity:1;
+    }
+  </style>
+
+  <path id="dz-a" d="M 0,0 L 240,240 L 0,480 Z"/>
+  <path id="dz-b" d="M 720,0 L 480,240 L 720,480 Z"/>
+  <path id="centerline" d="M 360,0 v 480" />
+  <path d="M 0,0 h 720 v 480 H 0 Z"/>
+
+  <g id="legend">
+    <path d="M 0,240 H 240"/>
+    <path d="M 240,240 H 480"/>
+    <path d="M 480,240 H 720"/>
+  </g>
+  
+  <defs>
+    <marker orient="auto" refY="0.0" refX="0.0" id="start-arrow">
+      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) translate(4,0)" />
+    </marker>
+    <marker orient="auto" refY="0.0" refX="0.0" id="end-arrow">
+      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) rotate(180) translate(4,0)" />
+    </marker>
+  </defs>
+  
+</svg>
+

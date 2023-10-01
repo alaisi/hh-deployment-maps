@@ -14,19 +14,19 @@
       stroke-dasharray: 1,2;
     }
     #legend {
-    	stroke: black;
-    	fill: black;
-    	marker-start: url(#start-arrow);
-    	marker-end: url(#end-arrow)
+      stroke: black;
+      fill: black;
+      marker-start: url(#start-arrow);
+      marker-end: url(#end-arrow)
     }
     marker {
-    	overflow:visible;
+      overflow: visible;
     }
     marker path {
-	stroke: black;
-	stroke-opacity: 1;
-	fill: black;
-	fill-opacity:1;
+      stroke: black;
+      stroke-opacity: 1;
+      fill: black;
+      fill-opacity:1;
     }
   </style>
 

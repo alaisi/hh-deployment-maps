@@ -4,7 +4,7 @@ MAP_SRCS := $(wildcard *.svg)
 PNGS := $(MAP_SRCS:.svg=.png) 
 PDF_SRCS := example/example-maps.sla
 PDFS := $(PDF_SRCS:.sla=.pdf)
-VERSION := 0.1
+VERSION := 0.2
 
 alt_fill_a := \#952e2a
 alt_fill_b := \#3e6159

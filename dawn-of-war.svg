@@ -1,4 +1,4 @@
-<svg width="721" height="481" viewBox="-0.5 -0.5 721 481" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="790" height="540" viewBox="-30 -30 790 540" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
   <style>
     path {
@@ -13,11 +13,16 @@
       stroke-miterlimit: 4;
       stroke-dasharray: 1,2;
     }
-    #legend {
+    #legend path {
       stroke: black;
       fill: black;
       marker-start: url(#start-arrow);
-      marker-end: url(#end-arrow)
+      marker-end: url(#end-arrow);
+    }
+    text {
+      font-family: 'Calluna';
+      font-size: 22px;
+      text-anchor: middle;
     }
     marker {
       overflow: visible;
@@ -26,27 +31,37 @@
       stroke: black;
       stroke-opacity: 1;
       fill: black;
-      fill-opacity:1;
+      fill-opacity: 1;
     }
   </style>
 
   <path id="dz-a" d="M 0,0 h 720 v 120 H 0 Z"/>
   <path id="dz-b" d="M 0,360 h 720 v 120 H 0 Z"/>
-  <path id="centerline" d="M 0,240 h 720" />
+  <path id="centerline" d="M 0,240 H 530 M 570,240 H 720" />
   <path d="M 0,0 h 720 v 480 H 0 Z"/>
 
   <g id="legend">
-    <path d="M 550,0 V 120"/>
-    <path d="M 550,120 V 360"/>
-    <path d="M 550,360 V 480"/>
+    <path d="M 550,0 V 45 M 550,75 V 120" />
+    <text x="550" y="65">12&quot;</text>
+
+    <path d="M 550,120 V 225 M 550,255 V 360" />
+    <text x="550" y="245">24&quot;</text>
+
+    <path d="M 550,360 V 405 M 550,435 V 480"/>
+    <text x="550" y="425">12&quot;</text>
+    
+    <path d="M 0,-15 H 340 M 380,-15 H 720"/>
+    <text x="360" y="-10">72&quot;</text>
+    <path d="M 735,0 V 225 M 735,255 V 480"/>
+    <text x="740" y="245">48&quot;</text>
   </g>
-  
+
   <defs>
     <marker orient="auto" refY="0.0" refX="0.0" id="start-arrow">
-      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) translate(4,0)" />
+      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) translate(3,0)" />
     </marker>
     <marker orient="auto" refY="0.0" refX="0.0" id="end-arrow">
-      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) rotate(180) translate(4,0)" />
+      <path d="M 8,4 L -2,0 L 8,-4 C 7,-2 7,2 8,4 Z" transform="scale(1.1) rotate(180) translate(3,0)" />
     </marker>
   </defs>
   

@@ -1,4 +1,4 @@
-<svg width="721" height="481" viewBox="-0.5 -0.5 721 481" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="790" height="540" viewBox="-30 -30 790 540" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
   <style>
     path, circle {
@@ -9,11 +9,16 @@
     }
     .dz-a { fill: #d4d1cc; }
     #dz-b { fill: #d4d1cc; }
-    #legend {
+    #legend path {
       stroke: black;
       fill: black;
       marker-start: url(#start-arrow);
-      marker-end: url(#end-arrow)
+      marker-end: url(#end-arrow);
+    }
+    text {
+      font-family: 'Calluna';
+      font-size: 22px;
+      text-anchor: middle;
     }
     marker {
       overflow: visible;
@@ -22,7 +27,7 @@
       stroke: black;
       stroke-opacity: 1;
       fill: black;
-      fill-opacity:1;
+      fill-opacity: 1;
     }
   </style>
 
@@ -32,11 +37,25 @@
   <path d="M 0,0 h 720 v 480 H 0 Z"/>
 
   <g id="legend">
-    <path d="M 0,240 H 120"/>
-    <path d="M 120,240 H 180"/>
-    <path d="M 180,240 H 540"/>
-    <path d="M 540,240 H 600"/>
-    <path d="M 600,240 H 720"/>
+    <path d="M 0,240 H 40 M 80,240 H 120"/>
+    <text x="60" y="245">12&quot;</text>
+
+    <path d="M 120,240 H 140 M 160,240 H 180"/>
+    <text x="150" y="245">6&quot;</text>
+    
+    <path d="M 180,240 H 340 M 380,240 H 540"/>
+    <text x="360" y="245">36&quot;</text>
+    
+    <path d="M 540,240 H 560 M 580,240 H 600"/>
+    <text x="570" y="245">6&quot;</text>
+
+    <path d="M 600,240 H 640 M 680,240 H 720"/>
+    <text x="660" y="245">12&quot;</text>
+    
+    <path d="M 0,-15 H 340 M 380,-15 H 720"/>
+    <text x="360" y="-10">72&quot;</text>
+    <path d="M 735,0 V 225 M 735,255 V 480"/>
+    <text x="740" y="245">48&quot;</text>
   </g>
 
   <defs>
